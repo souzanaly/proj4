@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney+</title>
+    <link rel="stylesheet" href="css/principal.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="imagens/disney.png" alt="imagem disney+"></a>
+            <a href="filmes.html"><p key="filmes" class="lang">filmes</p></a>
+            <a href="animacoes.html"><p key="animacoes" class="lang">animações</p></a>
+            <a href="cadastro.html"><p key="cadastro" class="lang">cadastro</p></a>
+            <a href="idiomas.html"><p key="idiomas" class="lang">idiomas</p></a>
+        </nav>
+    </header>
+    <main>
+        <div class="filmes">
+            <figure class="filme">
+                <a href="detalhes_filmes.html">
+                    <img src="imagens/capitao_america.png" alt="poster do filme capitão america">
+                </a>
+            </figure>
+            <figure class="filme" 
+                data-titulo="Deadpool & Wolverine"
+                data-descricao="descricao_deadpool_wolverine"
+                data-modal-img="imagens/deadpool-wolverine.jpg">
+                <img src="imagens/deadpool_wolverine.png" alt="poster do filme deadpool e wolverine">
+            </figure>
+            <figure class="filme" 
+                data-titulo="Indiana Jones" 
+                data-descricao="descricao_indiana_jones"
+                data-modal-img="imagens/banner-indianaj.jpg">
+                <img src="imagens/indiana_jones.png" alt="poster do filme indiana jones">
+            </figure>
+            <figure class="filme" 
+                data-titulo="Pantera Negra: Wakanda Para Sempre" 
+                data-descricao="descricao_wakanda"
+                data-modal-img="imagens/wakanda-baner.jpeg">
+                <img src="imagens/wakanda.png" alt="poster do filme wakanda para sempre">
+            </figure>
+            <figure class="filme" 
+                data-titulo="pequena sereia" 
+                data-descricao="descricao_pequena_sereia"
+                data-modal-img="imagens/A-Pequena-Sereia-capa.webp">
+                <img src="imagens/pequena_sereia.png" alt="poster do filme pequena sereia"></figure>
+            <figure class="filme" 
+                data-titulo="cruella" 
+                data-descricao="descricao_cruella"
+                data-modal-img="imagens/disney-cruella-2021-poster.jpg">
+                <img src="imagens/cruella.png" alt="poster do filme cruella"></figure>
+            <figure class="filme" 
+                data-titulo="mansao mal-assombrada" 
+                data-descricao="descricao_mansao"
+                data-modal-img="imagens/mansao_mal-assombrada_capa.jpg">
+                <img src="imagens/mansao_mal-assombrada.png" alt="poster do filme mansao mal-assombrada"></figure>
+            <figure class="filme" 
+                data-titulo="jungle cruise" 
+                data-descricao="descricao_jungle_cruise"
+                data-modal-img="imagens/jungle-cruise-capa.jpg">
+                <img src="imagens/jungle_cruise.png" alt="poster do filme jungle cruise"></figure>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-img" src="" alt="Filme">
+            <h2 id="modal-titulo"></h2>
+            <p id="modal-descricao"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

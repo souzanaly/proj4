@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney+</title>
+    <link rel="stylesheet" href="css/principal.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="imagens/disney.png" alt="imagem disney+"></a>
+            <a href="filmes.html"><p key="filmes" class="lang">filmes</p></a>
+            <a href="animacoes.html"><p key="animacoes" class="lang">animações</p></a>
+            <a href="cadastro.html"><p key="cadastro" class="lang">cadastro</p></a>
+            <a href="idiomas.html"><p key="idiomas" class="lang">idiomas</p></a>
+        </nav>
+    </header>
+    <main>
+        <div class="filmes">
+            <figure class="filme">
+                <a href="detalhes_animacoes.html">
+                    <img src="imagens/moana2.png" alt="poster do filme moana 2">
+                </a>
+            </figure>
+            <figure class="filme" 
+                data-titulo="Divertidamente 2"
+                data-descricao="descricao_divertidamente2"
+                data-modal-img="imagens/divertidamente2-poster.jpg">
+                <img src="imagens/divertidamente2.png" alt="poster do filme divertidamente 2">
+            </figure>
+            <figure class="filme" 
+                data-titulo="Elementos" 
+                data-descricao="descricao_elementos"
+                data-modal-img="imagens/elementos-poster.jpg">
+                <img src="imagens/elementos.png" alt="poster do filme elementos">
+            </figure>
+            <figure class="filme" 
+                data-titulo="Encanto" 
+                data-descricao="descricao_encanto"
+                data-modal-img="imagens/Capa-Encanto.webp">
+                <img src="imagens/encanto.png" alt="poster do filme Encanto">
+            </figure>
+            <figure class="filme" 
+                data-titulo="mundo estranho" 
+                data-descricao="descricao_mundo_estranho"
+                data-modal-img="imagens/mundo-estranho-poster.webp">
+                <img src="imagens/mundo_estranho.png" alt="poster do filme mundo_estranho"></figure>
+            <figure class="filme" 
+                data-titulo="luca" 
+                data-descricao="descricao_luca"
+                data-modal-img="imagens/luca-capa.webp">
+                <img src="imagens/luca.png" alt="poster do filme luca"></figure>
+            <figure class="filme" 
+                data-titulo="viva: a vida é uma festa" 
+                data-descricao="descricao_viva"
+                data-modal-img="imagens/viva-capa.jpg">
+                <img src="imagens/viva.png" alt="poster do filme viva: a vida é uma festa"></figure>
+            <figure class="filme" 
+                data-titulo="lilo & stich" 
+                data-descricao="descricao_lilo"
+                data-modal-img="imagens/lilo-capa.jpg">
+                <img src="imagens/lilo_&_stich.png" alt="poster do filme lilo_&_stich"></figure>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-img" src="" alt="Filme">
+            <h2 id="modal-titulo"></h2>
+            <p id="modal-descricao"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
